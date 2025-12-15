@@ -71,7 +71,3 @@ async def side_search_products(
     result = [serialize_mongo(doc) for doc in result]
 
     return {"error": "", "message": result}
-
-
-
-# router.get('/sidesearchproducts/',productcontroller.sidesearchproducts);
