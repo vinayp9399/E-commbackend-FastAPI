@@ -20,10 +20,11 @@ app.add_middleware(
     allow_headers=["*"],
 )
 
-handler = Mangum(app)
-
 app.include_router(router)
 app.include_router(userrouter)
 app.include_router(productrouter)
 app.include_router(wishlistrouter)
 app.include_router(cartrouter)
+
+
+handler = Mangum(app)
