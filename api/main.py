@@ -27,4 +27,4 @@ app.include_router(wishlistrouter)
 app.include_router(cartrouter)
 
 
-handler = Mangum(app)
+# handler = Mangum(app)
