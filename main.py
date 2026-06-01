@@ -5,7 +5,7 @@ from routes.productroute import productrouter
 from routes.wishlistroute import wishlistrouter
 from routes.cartroute import cartrouter
 from fastapi.middleware.cors import CORSMiddleware
-from mangum import Mangum
+# from mangum import Mangum
 
 app = FastAPI()
 
