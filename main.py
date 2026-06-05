@@ -4,6 +4,7 @@ from routes.userroute import userrouter
 from routes.productroute import productrouter
 from routes.wishlistroute import wishlistrouter
 from routes.cartroute import cartrouter
+from routes.chatroute import chatrouter          # ← ADDED
 from fastapi.middleware.cors import CORSMiddleware
 # from mangum import Mangum
 
@@ -26,6 +27,7 @@ app.include_router(userrouter)
 app.include_router(productrouter)
 app.include_router(wishlistrouter)
 app.include_router(cartrouter)
+app.include_router(chatrouter)                   # ← ADDED
 
 
 # handler = Mangum(app)
